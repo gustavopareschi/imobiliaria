@@ -23,7 +23,29 @@
     </header>
     <main>
         <div class="busca">
-
+            <form action="buscar">
+                <div class="detals">
+                    <select name="acao" id="acao">
+                        <option value="Venda">Venda</option>
+                    </select>
+                    <input type="text" placeholder="Localização do Imóvel">
+                </div>
+                <div class="selects">
+                    <select name="tipo_imov" id="tipo_imov">
+                        <option value="#">Tipo de Imóvel</option>
+                    </select>
+                    <select name="banheiros" id="banheiros">
+                        <option value="banheiros">Banheiros</option>
+                    </select>
+                    <select name="quartos" id="quartos">
+                        <option value="quartos">Quartos</option>
+                    </select>
+                    <div class="but_busc">
+                        <button id="btn_topo">Busque Agora</button>
+                        <p><a href="#">Mais Filtros</a></p>
+                    </div>
+                </div>
+            </form>
         </div>
         <div class="resultado">
             <H1>Resultados da busca</H1>

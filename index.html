@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Projeto Imobiliaria</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Projeto Imobiliaria</title>
+    </head>
+    <body>
     <header>
         <img src="./assets/Logo_PNG_1.png" alt="Logotipo da empresa. ">
         <div class="menu">
@@ -50,115 +50,27 @@
         <div class="resultado">
             <H1>Resultados da busca</H1>
             <h3>00 imóveis encontrados</h3>
-            <div class="cards">
-                <div id="card1" class="card">
-                    <div class="img_imov"></div>
-                    <div class="informs">
-                        <h2>Nome do Imóvel</h2>
-                        <p>R$000,00</p>
-                        <p>Pequena descrição do imóvel listado.</p>
+            <div id="cards">
+                <template id="card-template" class="card-template">
+                    <div class="card">
+                        <div class="img_imov"></div>
+                        <div class="informs">
+                        <h2 id="titulo"></h2>
+                        <p id="preco"></p>
+                        <p id="descricao"></p>
                         <ul class="info_imov">
                             <li><img src="./assets/cama-solid_1.png" alt="icone de um boneco deitado reperesentando a quantidade de quartos no imóvel.">
-                                01
+                                <p id="quartos_qtd"></p>
                             </li>
                             <li><img src="./assets/banheiro-solid_1.png" alt="icone de um chuveiro sobre a banheira, representando a quantidade de banheiros no imóvel.">
-                                01
+                                <p id="banheiros_qtd"></p>
                             </li>
                             
                         </ul>
                         <button>Detalhes</button>
-                </div>
-                </div>
-                <div id="card1" class="card">
-                    <div class="img_imov"></div>
-                    <div class="informs">
-                        <h2>Nome do Imóvel</h2>
-                        <p>R$000,00</p>
-                        <p>Pequena descrição do imóvel listado.</p>
-                        <ul class="info_imov">
-                            <li><img src="./assets/cama-solid_1.png" alt="icone de um boneco deitado reperesentando a quantidade de quartos no imóvel.">
-                                01
-                            </li>
-                            <li><img src="./assets/banheiro-solid_1.png" alt="icone de um chuveiro sobre a banheira, representando a quantidade de banheiros no imóvel.">
-                                01
-                            </li>
-                            
-                        </ul>
-                        <button>Detalhes</button>
-                </div>
-                </div>
-                <div id="card1" class="card">
-                    <div class="img_imov"></div>
-                    <div class="informs">
-                        <h2>Nome do Imóvel</h2>
-                        <p>R$000,00</p>
-                        <p>Pequena descrição do imóvel listado.</p>
-                        <ul class="info_imov">
-                            <li><img src="./assets/cama-solid_1.png" alt="icone de um boneco deitado reperesentando a quantidade de quartos no imóvel.">
-                                01
-                            </li>
-                            <li><img src="./assets/banheiro-solid_1.png" alt="icone de um chuveiro sobre a banheira, representando a quantidade de banheiros no imóvel.">
-                                01
-                            </li>
-                            
-                        </ul>
-                        <button>Detalhes</button>
-                </div>
-                </div>
-                <div id="card1" class="card">
-                    <div class="img_imov"></div>
-                    <div class="informs">
-                        <h2>Nome do Imóvel</h2>
-                        <p>R$000,00</p>
-                        <p>Pequena descrição do imóvel listado.</p>
-                        <ul class="info_imov">
-                            <li><img src="./assets/cama-solid_1.png" alt="icone de um boneco deitado reperesentando a quantidade de quartos no imóvel.">
-                                01
-                            </li>
-                            <li><img src="./assets/banheiro-solid_1.png" alt="icone de um chuveiro sobre a banheira, representando a quantidade de banheiros no imóvel.">
-                                01
-                            </li>
-                            
-                        </ul>
-                        <button>Detalhes</button>
-                </div>
-                </div>
-                <div id="card1" class="card">
-                    <div class="img_imov"></div>
-                    <div class="informs">
-                        <h2>Nome do Imóvel</h2>
-                        <p>R$000,00</p>
-                        <p>Pequena descrição do imóvel listado.</p>
-                        <ul class="info_imov">
-                            <li><img src="./assets/cama-solid_1.png" alt="icone de um boneco deitado reperesentando a quantidade de quartos no imóvel.">
-                                01
-                            </li>
-                            <li><img src="./assets/banheiro-solid_1.png" alt="icone de um chuveiro sobre a banheira, representando a quantidade de banheiros no imóvel.">
-                                01
-                            </li>
-                            
-                        </ul>
-                        <button>Detalhes</button>
-                </div>
-                </div>
-                <div id="card1" class="card">
-                    <div class="img_imov"></div>
-                    <div class="informs">
-                        <h2>Nome do Imóvel</h2>
-                        <p>R$000,00</p>
-                        <p>Pequena descrição do imóvel listado.</p>
-                        <ul class="info_imov">
-                            <li><img src="./assets/cama-solid_1.png" alt="icone de um boneco deitado reperesentando a quantidade de quartos no imóvel.">
-                                01
-                            </li>
-                            <li><img src="./assets/banheiro-solid_1.png" alt="icone de um chuveiro sobre a banheira, representando a quantidade de banheiros no imóvel.">
-                                01
-                            </li>
-                            
-                        </ul>
-                        <button>Detalhes</button>
-                </div>
-                </div>
+                        </div>
+                    </div>
+                </template>
                 
             </div>
         </div>
@@ -166,5 +78,7 @@
     <footer>
         <p>Todos os direitos reservados a imobil - CNPJ: 00.000.000/0001-00</p>
     </footer>
+    <script src="/script.js"></script>
+
 </body>
 </html>

@@ -121,7 +121,7 @@ select{
     text-decoration: underline;
 }
 
-.cards{
+#cards{
     margin: 50px 0;
     display: flex;
     gap: 60px;
@@ -140,7 +140,7 @@ h2{
 
 .img_imov{
     background-color: var(--bg-footer);
-    width: 100%;
+    width: 250px;
     height: 150px;
 }
 
@@ -151,10 +151,15 @@ h2{
     gap: 8px;
 }
 
-.info_imov{
-    align-self: center;
-    justify-self: center;
-    text-justify: center;
+ul{
+    justify-content: center
+}
+
+li{
+ display: flex;
+ flex-direction: row;
+ gap: 8px;
+ justify-content: center;
 }
 
 button{
